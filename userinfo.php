@@ -1,11 +1,20 @@
 <?php
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$db = "test";
+$server = "remotemysql.com";
+$username = "LJfrIkc1Op";
+$password = "0l7i5b22to";
+$db = "LJfrIkc1Op";
+$port = 3306;
 
-$con = mysqli_connect($server,$username,$password,$db);
+$con = mysqli_connect($server,$username,$password,$db,$port);
+
+// for localhost 
+// $server = "localhost";
+// $username = "root";
+// $password = "";
+// $db = "test";
+
+// $con = mysqli_connect($server,$username,$password,$db);
 
 if($con){
     echo "Connection Successful";
